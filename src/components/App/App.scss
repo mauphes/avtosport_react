@@ -1,27 +1,81 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 
-/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */
-
 @import '../variables.scss';
 
 /*
  * Base styles
  * ========================================================================== */
 
-html {
-  color: #222;
-  font-weight: 100;
-  font-size: 1em; /* ~16px; */
-  font-family: var(--font-family-base);
-  line-height: 1.375; /* ~22px */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0!important;
+    list-style: none;
+    resize: none;
 }
+[type='submit'], button{cursor:pointer;}
+
+
+textarea, input, button{
+    font-family: inherit;
+}
+
+@font-face {
+    font-family: 'black';
+    src: url('/fonts/Roboto-Black.eot');
+    src: local('☺'), url('/fonts/Roboto-Black.woff') format('woff'), url('/fonts/Roboto-Black.ttf') format('truetype'), url('/fonts/Roboto-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img{
+    max-width: 100%;
+    -webkit-user-drag: none;
+}
+a:hover{text-decoration: none;}
+table{border-collapse:collapse;}
 
 body{
-  background: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    font-weight: 300;
 }
 
-a {
-  color: #0074c2;
+:global{
+    .container {
+        max-width: 960px;
+        padding: 0 30px;
+    }
+    .iblock{display:inline-block;}
+    .left{float:left;}
+    .right{float:right;}
+    .relative{position:relative;}
+    .aright{text-align:right;}
+    .aleft{text-align:left;}
+    .acenter{text-align:center;}
+    .mgt0{
+        margin-top: 0!important;
+    }
+    .mgt10{
+        margin-top: 10px!important;
+    }
+    .mgt15{
+        margin-top: 15px;
+    }
+    .mgt20{
+        margin-top: 20px;
+    }
+    .mgt30{
+        margin-top: 30px;
+    }
+    .mgt35{
+        margin-top: 35px;
+    }
+    .mgt40{
+        margin-top: 40px;
+    }
 }
 
 /*

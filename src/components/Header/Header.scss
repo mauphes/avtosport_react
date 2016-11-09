@@ -1,1 +1,25 @@
 @import '../variables.scss';
+
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(1,1,1,.7);
+    line-height: 60px;
+    z-index: 200;
+}
+.logo{
+    float: left;
+    margin-top: -3px;
+}
+
+@media (max-width: 991px){
+    .burger{
+        width: 20px;
+        height: 17px;
+        float: right;
+        margin-top: 20px;
+        background: url('/img/burger.png') no-repeat;
+    }
+}

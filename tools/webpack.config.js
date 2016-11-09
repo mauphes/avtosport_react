@@ -120,14 +120,13 @@ const config = {
     cached: VERBOSE,
     cachedAssets: VERBOSE,
   },
-
-  postcss(bundler) {
-    return [
-        require('postcss-import')({ addDependencyTo: bundler }),
-        require('postcss-flexbugs-fixes')(),
-        require('autoprefixer')({ browsers: AUTOPREFIXER_BROWSERS }),
-      ];
-  },
+    postcss(bundler) {
+        return [
+            require('postcss-import')({addDependencyTo: bundler}),
+            require('precss')(),
+            require('autoprefixer')({browsers: AUTOPREFIXER_BROWSERS}),
+        ];
+    },
 };
 
 //
